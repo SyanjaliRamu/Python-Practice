@@ -13,8 +13,12 @@ print(sc)
 pop = input("enter marks of Populations")
 pop = int(pop)
 print(pop)
+Total_Marks='Total_marks'
+print(Total_Marks)
 total_marks = int(nep + eng + mat + sc + pop)
 print(total_marks)
+Percentage ='Percentage'
+print(Percentage)
 percentage =float(total_marks/5)
 print(percentage)
 if percentage < 35:
@@ -28,4 +32,4 @@ elif percentage >= 60 and percentage < 75:
 elif percentage >= 75:
     print('fist division with distiction')
 else:
-    print('enter marks of each subjects in betwwen 0 to 100')
+    print('Marks Must be in between 0 to 100')
