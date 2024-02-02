@@ -1,6 +1,22 @@
-<component name="InspectionProjectProfileManager">
-  <settings>
-    <option name="USE_PROJECT_PROFILE" value="false" />
-    <version value="1.0" />
-  </settings>
-</component>
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Data for Particle Density - Oven-Dry (Mg/m³) for 20mm size
+treatments = ['NA', 'Untreated RCA - Day 1', 'Untreated RCA - Day 2', 'Untreated RCA - Day 3',
+              'Treated RCA (0.1M HCl) - Day 1', 'Treated RCA (0.1M HCl) - Day 2', 'Treated RCA (0.1M HCl) - Day 3',
+              'Treated RCA (0.5M HCl) - Day 1', 'Treated RCA (0.5M HCl) - Day 2', 'Treated RCA (0.5M HCl) - Day 3',
+              'Treated RCA (0.8M HCl) - Day 1', 'Treated RCA (0.8M HCl) - Day 2', 'Treated RCA (0.8M HCl) - Day 3']
+
+values = [2.6, 2.33, 2.37, 2.39, 2.32, 2.39, 2.39, 2.38, 2.38, 2.4, 2.37]
+
+# Bar chart
+plt.figure(figsize=(10, 6))
+plt.bar(treatments, values, color='skyblue')
+plt.xlabel('Treatments and Days')
+plt.ylabel('Particle Density - Oven-Dry (Mg/m³)')
+plt.title('Particle Density - Oven-Dry (Mg/m³) for 20mm Size')
+plt.xticks(rotation=45, ha='right')
+plt.tight_layout()
+
+# Show the plot
+plt.show()
